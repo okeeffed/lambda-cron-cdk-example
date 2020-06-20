@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ROOT_WDIR=`pwd`
+
+# package code for lambda functions
+
+cd  "$ROOT_WDIR"/lambda/ || exit
+npm install --production
+npm install webpack webpack-cli
+npm run build
+cd dist
+zip -9 message_out_bot_lambda.zip index.js
