@@ -1,3 +1,5 @@
+# Exammple Lambda Cron with Dependencies zipped
+
 ## Resources
 
 1. [How Zalando use lambda cron in Java](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
@@ -41,4 +43,5 @@ Run `cdk destroy` to destroy your app's resources to avoid incurring any costs f
 
 ## Extra notes for blog
 
-1. Had to run `cdk bootstrap` first
+1. Had to run `cdk bootstrap` first.
+2. Had to use `@aws-cdk/aws-s3-assets` to zip the lambda folder and run the lambda from there on S3.
