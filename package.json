@@ -25,6 +25,7 @@
     "@aws-cdk/aws-events": "*",
     "@aws-cdk/aws-events-targets": "*",
     "@aws-cdk/aws-lambda": "*",
+    "@aws-cdk/aws-s3-assets": "^1.46.0",
     "@aws-cdk/core": "*",
     "@types/dotenv": "^8.2.0",
     "axios": "^0.19.2",
