@@ -6,7 +6,10 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "destory": "cdk destory",
+    "synth": "cdk synth"
   },
   "author": {
     "name": "Amazon Web Services",
