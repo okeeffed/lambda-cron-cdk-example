@@ -22,7 +22,7 @@ export class LambdaCronStack extends cdk.Stack {
     // Run every day at 6PM UTC
     // See https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html
     const rule = new events.Rule(this, 'Rule', {
-      schedule: events.Schedule.expression('cron(0/5 * ? * * *)'),
+      schedule: events.Schedule.expression('cron(0/5 * * * ? *)'),
     });
 
     rule.addTarget(new targets.LambdaFunction(lambdaFn));
